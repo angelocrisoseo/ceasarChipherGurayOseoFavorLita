@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Caesar Cipher Encryption/Decryption</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  
+  <div class="welcome-container">
+    <h1><span>Welcome to</span> <br> Caesar Cipher Encryption/Decryption</h1>
+    <button onclick="startEncryption()">Start</button>
+  </div>
+  <div class="container" id="encryptionContainer" style="display: none;">
+    
+  <div class="container" id="encryptionContainer">
+    <h1>Caesar Cipher Encryption/Decryption</h1>
+        <div class="input-container">
+            <label for="file-input" class="custom-file-input">
+              Choose a file
+            </label>
+            <input type="file" id="file-input" accept=".txt">
+          </div>
+          
+          <div class="input-section">
+            <div class="input-wrapper">
+              <input type="number" id="encryption-key" min="0" placeholder="Encryption/Decryption Key">
+            </div>
+          </div>
+          
+    <div class="button-section">
+      <button onclick="encryptFile()">Encrypt</button>
+      <button onclick="decryptFile()">Decrypt</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

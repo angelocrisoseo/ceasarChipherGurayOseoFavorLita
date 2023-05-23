@@ -1,0 +1,192 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(Dream-Library.jpg);
+    background-position: center -40px;
+    margin: 0;
+    padding: 20px;
+
+  }
+  
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .welcome-container h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .welcome-container h1 span{
+    color:#aa0000;
+  }
+  .welcome-container button{
+    font-size: 25px;
+    color: #fff;
+    background-color: #ff1818;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    transition: backgorund-color 0.3s ease;
+  }
+  
+  .welcome-container button:hover {
+    transform: translateY(-1px);
+    background-color: #aa0000;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2), 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .container {
+    width: 450px;
+    margin: 0 auto;
+    background-color: maroon;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    perspective: 800px;
+  
+    /* Added properties for centering */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  
+  .input-wrapper {
+    position: relative;
+    padding-top: 20px;
+  }
+  
+  .input-wrapper input {
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    height: 23px;
+  }
+  
+  .input-wrapper input:focus {
+    outline: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-wrapper label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #888;
+    transition: opacity 0.3s;
+    pointer-events: none;
+  }
+  
+  .input-wrapper input:focus + label {
+    opacity: 0;
+  }
+ 
+  
+  .custom-file-input {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .custom-file-input.selected {
+    background-color: #ff5722;
+  }
+  
+  .custom-file-input:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .custom-file-input:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  
+  .custom-file-input:hover {
+    background-color: #45a049;
+  }
+  
+  .custom-file-input:active {
+    transform: translateY(1px);
+  }
+  
+  #file-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  
+  
+  .file-input {
+    margin-bottom: 10px;
+  }
+  
+  .button-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button-section {
+    perspective: 800px;
+  }
+  
+  .button-section button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(205, 6, 6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .button-section button:hover {
+    transform: translateY(-3px) translateZ(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .button-section button:active {
+    transform: translateY(0) translateZ(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  #encryptionContainer h1{
+    color: white;
+  }
+  
+  
+  
